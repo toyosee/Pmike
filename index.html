@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HOME PAGE</title>
+
+	<!--  The code below is for internal styling -->
+	<!-- CSS syntax, Selector{property: value;} 
+		Selector can be any tag, Selector can be a class, selector can be an ID-->
+
+	<style type="text/css">
+
+		body{background:black; color: white;} /* CSS code to stle the body. Background and color property*/
+
+		h1,p,ul{} /* Empty selectors. no property or values added*/
+
+		ul{ } /* Empty UL tag*/
+
+		.square-list{list-style-type: square } /* Class */
+
+		.strong{font-size: 50px; color:red;} /* Class */
+
+		.pmike{ font-size:20px; 
+			    color: goldenrod; 
+			    border: 1px dashed red;} /* Class */
+
+		#hadassah{ color:greenyellow; } /* ID */
+		
+	</style>
+
+</head>
+
+<body>
+
+	<!-- This is a header tag with a horizontal rule  -->
+	<h1 class="pmike strong">WELCOME TO MY PAGE</h1> <hr/>
+
+	<!-- This is a paragraph tag with a strong tag  -->
+	<p id="hadassah">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et <strong class="strong">I am strong</strong> dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco </p>laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+	<!-- This is a paragraph tag with an unordered list  -->
+	<p>The food he loves are:
+		<!-- This is an unordered list -->
+		<ul class="square-list">
+		<li>yam</li>
+		<li>egg</li>
+		<li>cassava</li>
+	</ul>
+	</p>
+
+	<p></p>
+	<br>
+
+		<!-- This is an ordered list  -->
+	<ol type="a">
+		<li>yam</li>
+		<li>egg</li>
+		<li>cassava</li>
+		<li>yam</li>
+		<li>egg</li>
+		<li>cassava</li>
+	</ol>
+
+	<!-- This is an input field  -->
+	<input type="text" name="">
+	<a href="mailto:mike.ayodele@outlook.com"> Mail me</a>
+	<a href="https://www.google.com"> Take to Google </a>
+	<a href="https://facebook.com" target="_blank">Connect</a>
+	<a href="see1.jpg" download="i don get am">Get the Image</a>
+	<button type="button" onclick="show_up()">Click Now</button>
+
+	<!-- This is a simple javascript alert script -->
+	<script type="text/javascript">
+		let show_up = () => {alert("Na So");}
+	</script>
+</body>
+</html>
